@@ -1,5 +1,7 @@
 package br.ifg.urutai.sdapigateway.DTO;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
@@ -11,7 +13,9 @@ public class PedidoEntregaResponseDTO implements Serializable {
     private Long idCliente;
     private double valorTotal;
     private PedidoStatus status;
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataCriacao;
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
     private LocalDateTime dataAtualizacao;
 
     public PedidoEntregaResponseDTO() {
