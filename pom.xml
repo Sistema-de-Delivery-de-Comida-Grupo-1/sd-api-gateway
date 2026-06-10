@@ -10,7 +10,7 @@
     </parent>
     <groupId>br.ifg.urutai</groupId>
     <artifactId>sd-api-gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>sd-api-gateway</name>
     <description>sd-api-gateway</description>
     <url/>
