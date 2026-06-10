@@ -1,0 +1,58 @@
+package br.ifg.urutai.sdapigateway.DTO;
+
+import br.ifg.urutai.sdapigateway.model.StatusPedido;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class PedidoResponseDTO implements Serializable {
+    private Long id;
+    private Long idCliente;
+    private double valorTotal;
+    private List<ItemPedidoResumeDTO> itens;
+    private StatusPedido status;
+
+    public PedidoResponseDTO() {
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(Long idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public double getValorTotal() {
+        return valorTotal;
+    }
+
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public List<ItemPedidoResumeDTO> getItens() {
+        return itens;
+    }
+
+    public void setItens(List<ItemPedidoResumeDTO> itens) {
+        this.itens = itens;
+    }
+
+    public StatusPedido getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusPedido status) {
+        this.status = status;
+    }
+}
+
